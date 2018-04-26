@@ -1,0 +1,41 @@
+/*
+ *  Param.h
+ *  Nova
+ *
+ *  Created by sunjun on 11-6-14.
+ *  Copyright 2011 sunstdio. All rights reserved.
+ *
+ */
+//////////////////////////////////////////////////////////////////////////
+
+#ifndef __Param__
+#define __Param__
+
+//////////////////////////////////////////////////////////////////////////
+
+class Param
+{
+public:
+	// constructor
+	Param();
+
+	// destructor
+	~Param();
+
+  VOID add(const GVar& var);
+
+  // the data pointer
+  VOID* data() const;
+
+  // the data size  
+  U32 size() const;
+
+private:
+  std::vector<U8>mData;
+};
+
+//////////////////////////////////////////////////////////////////////////
+
+#endif // __Param__
+
+//////////////////////////////////////////////////////////////////////////
